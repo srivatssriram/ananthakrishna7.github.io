@@ -1,0 +1,169 @@
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto&family=Rozha+One&display=swap');
+html{
+    scroll-behavior: smooth;
+}
+
+body::-webkit-scrollbar {
+    display: none;
+  }
+body{
+    margin: 0;
+}
+/* index */
+section{
+    display: inline-flex;
+    width: 100%;
+    margin: 0;
+    height: 100vh;
+}
+
+.intro, .general{
+    background-color: rgb(226, 244, 252);
+    font-family: 'Poppins', sans-serif;}
+
+/* .general{
+    height: 100%;
+    text-align: center;
+    display: flex;
+} */
+
+header {
+    padding: 20px;
+    text-align: center;
+    height: 100px;
+}
+
+
+
+.header_text{
+    padding:15% 10%;
+    color:rgb(52, 106, 142);
+    position: relative;
+    animation: fadeInAnimation ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.buttons{
+    display: inline;
+    margin: 0;
+}
+
+button{
+    font-size: 1.5em;
+    padding:15px;
+    width:49%;
+    color: white;
+    background-color: orangered;
+    border-style: none;
+    border-radius: 15px;
+}
+
+button:hover{
+    background-color:rgb(245, 111, 62);
+    cursor: pointer;
+}
+
+.header_image{
+    padding-left: 5%;
+    padding-top: 5%;
+    animation: fadeInAnimationRight ease 3s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+.header_text h1{
+    font-size: 5em;
+}
+ .header_text p{
+    font-size: 1.7em;
+    margin: auto;
+ }
+
+.orange{
+    background-color: orangered;
+}
+
+/* login and signup */
+
+form{
+    box-shadow: lightblue 5px 5px 5px;
+    border-radius: 15%;
+    display: inline-block;
+    margin: auto;
+    background-color: aliceblue;
+    padding: 20% 10%;
+}
+
+
+input[type=submit]{
+    /* background-color: orane; */
+    box-shadow: lightblue 2px 2px 2px;
+    border-radius: 25px;
+    margin: 10px;
+    padding: 5px 10px;
+}
+
+input[type=submit]:hover{
+    cursor: pointer;
+}
+
+input[type=submit]:active{
+    box-shadow: none;
+}
+
+/* navigation */
+
+/* nav{
+    text-align: center;
+    padding: 10px;
+} */
+
+nav ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+nav ul li a{
+    color:rgb(52, 106, 142);
+    font-size: large;
+    padding: 10px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+
+}
+
+nav ul li a:hover{
+    /* background-color: orangered; */
+    background-image: linear-gradient( to bottom right, orangered, orange);
+    color: white;
+
+}
+
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+        top: 200px;
+    }
+    100% {
+        opacity: 1;
+        top: 0px;
+     }
+}
+
+@keyframes fadeInAnimationRight {
+    0% {
+        opacity: 0;
+        left: 200px;
+    }
+    100% {
+        opacity: 1;
+        left: 0px;
+     }
+}
