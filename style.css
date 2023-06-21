@@ -10,17 +10,31 @@ body{
     margin: 0;
 }
 /* index */
-section{
+/* may need to change this part */
+
+.intro, .general, .orange{
+    background-color: rgb(226, 244, 252);
+    font-family: 'Poppins', sans-serif;
     display: inline-flex;
     width: 100%;
     margin: 0;
     height: 100vh;
+
 }
 
-.intro, .general{
+section{
     background-color: rgb(226, 244, 252);
-    font-family: 'Poppins', sans-serif;}
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+}
 
+header{
+    background-color: rgb(226, 244, 252);
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+    margin: 0;
+
+}
 /* .general{
     height: 100%;
     text-align: center;
@@ -97,7 +111,7 @@ form{
 
 
 input[type=submit]{
-    /* background-color: orane; */
+    background-color: orangered;
     box-shadow: lightblue 2px 2px 2px;
     border-radius: 25px;
     margin: 10px;
@@ -121,7 +135,7 @@ input[type=submit]:active{
 
 nav ul{
     list-style-type: none;
-    margin: 0;
+    margin-top: 25px;
     padding: 0;
 }
 
@@ -139,13 +153,27 @@ nav ul li a{
 
 }
 
-nav ul li a:hover{
+nav ul li a:hover, .active{
     /* background-color: orangered; */
     background-image: linear-gradient( to bottom right, orangered, orange);
     color: white;
 
 }
 
+/* assignments...add everything else above this */
+
+.assignments{
+    background-color: white;
+    box-shadow: lightblue 5px 5px 5px;
+    margin: 5% 15%;
+    padding: 2%;
+    border-radius: 35px;
+    position: relative;
+    animation: fadeInAnimationRight ease 3s;
+    
+}
+
+/* animations */
 @keyframes fadeInAnimation {
     0% {
         opacity: 0;
