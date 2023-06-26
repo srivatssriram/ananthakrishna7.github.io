@@ -1,12 +1,18 @@
-// var firstsec = document.getElementsByClassName('intro');
-// var secondsec = document.getElementsByClassName('header_text');
-// var lastScrollTop = 0;
-// window.onscroll = function(){
-//    var st = window.scrollY || document.documentElement.scrollTop; 
-//    if (st > lastScrollTop){
-//       secondsec.scrollIntoView({behavior: "smooth"});
-//    } else {
-//       firstsec.scrollIntoView({behavior: "smooth"});
-//    }
-//    lastScrollTop = st <= 0 ? 0 : st; 
-// } 
+$(document).ready(() => {
+  
+  const backToTop = $('#backToTop')
+  const amountScrolled = 300
+  
+  $(window).scroll(() => {
+    $(window).scrollTop() >= amountScrolled 
+      ? backToTop.fadeIn('fast') 
+      : backToTop.fadeOut('fast')
+  })
+  
+  backToTop.click(() => {
+    $('body, html').animate({
+      scrollTop: 0
+    }, 600)
+    return false
+  })
+})
