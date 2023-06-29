@@ -26,13 +26,13 @@ body{
 
 section{
     background-color: rgb(226, 244, 252);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     padding: 10px;
 }
 
 header{
     background-color: rgb(226, 244, 252);
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     margin: 0;
 
@@ -163,7 +163,8 @@ nav ul li {
 
 nav ul li a{
     color:rgb(52, 106, 142);
-    font-size: large;
+    font-size: larger;
+    font-weight: bolder;
     padding: 10px 20px;
     border-radius: 25px;
     text-decoration: none;
@@ -188,6 +189,13 @@ nav ul li a:hover, .active{
     position: relative;
     animation: fadeInAnimationRight ease 3s;
     
+}
+
+.tag{
+    background-color: rgb(219, 217, 217);
+    border-radius: 15px;
+    display: inline;
+    padding: 5px;   
 }
 
 /* animations */
