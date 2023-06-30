@@ -127,19 +127,65 @@ button:hover{
 form{
     box-shadow: lightblue 5px 5px 5px;
     border-radius: 15%;
-    display: inline-block;
+    background-color: #ffffff;
     margin: auto;
-    background-color: aliceblue;
-    padding: 20% 10%;
+    padding: 100px 100px 100px 100px;
 }
 
+form h1{
+    text-align: center;
+}
+
+form a{
+    color: black;
+}
+
+.signup{
+    /* margin: auto; */
+    padding: 100px 100px 100px 40px;
+}
+
+.signup label{
+    display:inline-block;
+    width:200px;
+    margin-right:30px;
+    text-align:right;
+    }
+
+input{
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    font-size: large;
+    padding: 20px;
+    background-color: rgb(227, 236, 245);
+}
+
+select{
+    border-radius: 25px;
+    border: none;
+    height: 40px;
+    font-size: large;
+    padding: 10px;
+    background-color: rgb(227, 236, 245);
+}
+
+textarea{
+    border-radius: 25px;
+    border: none;
+    font-size: large;
+    padding: 10px;
+    background-color: rgb(227, 236, 245);
+}
 
 input[type=submit]{
     background-color: orangered;
+    color: white;
     box-shadow: lightblue 2px 2px 2px;
     border-radius: 25px;
     margin: 10px;
-    padding: 5px 10px;
+    padding: 5px 20px;
+    float: right;
 }
 
 input[type=submit]:hover{
@@ -168,7 +214,7 @@ nav ul li {
     margin-right: 20px;
 }
 
-nav ul li a{
+nav ul li a, .button{
     color:rgb(52, 106, 142);
     font-size: larger;
     font-weight: bolder;
@@ -178,7 +224,7 @@ nav ul li a{
 
 }
 
-nav ul li a:hover, .active{
+nav ul li a:hover, .active, .button:hover{
     /* background-color: orangered; */
     background-image: linear-gradient( to bottom right, orangered, orange);
     color: white;

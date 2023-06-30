@@ -6,17 +6,18 @@
     <title>Login</title>
     <link rel="stylesheet" href="style.css">
 </head>
-<div class="general">
-    <form>
+<body class="general" onload="document.login.username.focus();">
+    <form class="login">
     <h1>Login</h1>
-    <label for="username">Username</label>
-    <input name="username" id="username">
+    <label for="username">Username</label><br>
+    <input name="username" id="username" required>
     <br>
-    <label for="password">Password</label>
-    <input type="password" name="password" id="password">
-    <br>
+    <label for="password">Password</label><br>
+    <input type="password" name="password" id="password" required>
+    <br><br>
+    <a href="signup.html"><strong>Sign Up</strong></a>
     <input type="submit" value="Login">
     </form>
-</div>
+</body>
 
 </html>

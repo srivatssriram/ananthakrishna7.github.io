@@ -5,14 +5,22 @@
 	<title>Student Planner - Sign Up</title>
 	<link rel="stylesheet" href="style.css">
 </head>
-<form>
+<div class="general">
+<form class="signup">
 	<h1>Sign Up</h1>
 	<label for='first name'>First Name:</label>
-	<input type='text' name='first name'>
+	<input type='text' name='first name' required>
 	<br><br>
 	<label for='last name'>Last Name:</label>
-	<input type='text' name='last name'>
-	<br>
+	<input type='text' name='last name' required>
+	<br><br>
+	<label for="dob">Date of Birth:</label>
+	<input type="date" name="dob" id="dob">
+	<br><br>											
+	<label for="email">Email:</label>
+	<input type="email" name="email" id="email">
+	<br><br>
 	<input type='submit' method='POST'>
 </form>
+</div>
 </html>
