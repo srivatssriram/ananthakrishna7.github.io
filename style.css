@@ -3,9 +3,9 @@ html{
     scroll-behavior: smooth;
 }
 
-body::-webkit-scrollbar {
+/* body::-webkit-scrollbar {
     display: none;
-  }
+  } */
 body{
     margin: 0;
     /* display: grid;
@@ -113,6 +113,13 @@ button:hover{
     left: 47.5%;
     --offset: 100px; 
     margin-top: calc(100vh + var(--offset)); 
+  }
+
+  footer{
+    text-align: center;
+  }
+  footer ul{
+    list-style-type: none;
   }
 
 /* login and signup */
