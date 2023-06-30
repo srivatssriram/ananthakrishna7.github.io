@@ -233,6 +233,10 @@ nav ul li a:hover, .active, .button:hover{
 
 /* assignments...add everything else above this */
 
+.master{
+    list-style-type: none;
+}
+
 .assignments{
     background-color: white;
     box-shadow: lightblue 5px 5px 5px;
@@ -249,6 +253,34 @@ nav ul li a:hover, .active, .button:hover{
     border-radius: 15px;
     display: inline;
     padding: 5px;   
+}
+
+/* timetable */
+
+.timetable, tr, th, td{
+
+    /* background-color: red; */
+    color:rgb(52, 106, 142);
+
+    font-size: large;
+    font-weight: bold;
+    padding: 20px;
+    border: 2px;
+    border-style: solid;
+    border-collapse: collapse;
+    
+}
+
+.container{
+    margin: 3.5%;
+    width: 80%;
+    background-color: white;
+    color:rgb(52, 106, 142);
+    box-shadow: lightblue 5px 5px 5px;
+    display: inline-block;
+    padding: 20px;
+    height: max-content;
+    border-radius: 25px;
 }
 
 /* animations */
