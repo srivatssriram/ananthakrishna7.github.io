@@ -8,6 +8,9 @@ html{
   } */
 body{
     margin: 0;
+    background-color: rgb(226, 244, 252);
+    font-family: 'Poppins', sans-serif;
+
     /* display: grid;
     grid-template-columns: auto auto; */
 }
@@ -164,9 +167,9 @@ input{
 select{
     border-radius: 25px;
     border: none;
-    height: 40px;
     font-size: large;
     padding: 10px;
+    height: 40px;
     background-color: rgb(227, 236, 245);
 }
 
@@ -231,6 +234,25 @@ nav ul li a:hover, .active, .button:hover{
 
 }
 
+/* homepage */
+
+.card{
+    background-color: white;
+    box-shadow: lightblue 5px 5px 5px;
+    margin: 15px;
+    padding: 2%;
+    border-radius: 35px;
+    position: relative;
+    animation: fadeInAnimation ease 3s;
+    height: fit-content;
+    font-size: larger;
+}
+.home{
+    padding: 5% 30%;
+}
+.home a{
+    color: blue;
+}
 /* assignments...add everything else above this */
 
 .master{
@@ -272,7 +294,7 @@ nav ul li a:hover, .active, .button:hover{
 }
 
 .container{
-    margin: 3.5%;
+    margin-left: 150px;
     width: 80%;
     background-color: white;
     color:rgb(52, 106, 142);
