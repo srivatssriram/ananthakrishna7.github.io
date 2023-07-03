@@ -2,10 +2,7 @@ const date = new Date();
 const dayNo = date.getDay()
 let day = "Sunday"
 switch (dayNo) {
-    case 0:
-        break;
-
-    case 1:
+   case 1:
         day = "Monday";
         break;
     
